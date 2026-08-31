@@ -1,0 +1,2402 @@
+
+
+<!doctype html>
+<html id="html" lang="en">
+<head><title>
+	Etherscan Client Portal and Services
+</title><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><meta name="author" content="etherscan.io" /><meta name="Description" content="The Ethereum BlockChain Explorer, API and Analytics Platform" /><meta name="keywords" content="ethereum, explorer, ether, search, blockchain, crypto, currency" /><meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="/images/favicon3.ico" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1JC9RNQXV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config','G-T1JC9RNQXV', { 'anonymize_ip': true });
+    </script>
+    
+
+    <script>
+        //Search box text ad
+        var availableAd = [];
+        var gotAd = [];
+
+        
+        availableAd = ["<div class='p-2'><a href='https://moonpay-affiliate-program.sjv.io/GmG56B' rel='nofollow' target='_blank' data-bs-toggle='tooltip' data-bs-trigger='hover' title='Links to an External Advertiser site' class='search-panel-ads d-flex align-items-center p-2 rounded'><div class='me-2'><img width='22' src='/images/gen/moonpay_20.png' alt='Ads'></div><div class='text-truncate'><h6 class='d-flex align-items-center fs-sm text-dark mb-0'><div class='text-truncate me-2'>MoonPay: Buy & Sell Crypto with a credit card.</div><span class='d-none d-sm-inline-block small bg-white text-muted rounded-1 border px-2 py-1 ms-1'>Sponsored</span><span class='d-inline-block d-sm-none small bg-white text-muted rounded-1 border px-2 py-1 ms-1'>Ad</span></h6></div></a></div>", "<div class='p-2'><a href='https://goto.etherscan.com/rd/KUBICX7P38SWJDDX9ANJIH3ZJ' rel='nofollow' target='_blank' data-bs-toggle='tooltip' data-bs-trigger='hover' title='Links to an External Advertiser site' class='search-panel-ads d-flex align-items-center p-2 rounded'><div class='me-2'><img width='22' src='/images/gen/lightchainai_20.png' alt='Lightchain'></div><div class='text-truncate'><h6 class='d-flex align-items-center fs-sm text-dark mb-0'><div class='text-truncate me-2'>Lightchain Protocol AI Presale Live</div><span class='d-none d-sm-inline-block small bg-white text-muted rounded-1 border px-2 py-1 ms-1'>Sponsored</span><span class='d-inline-block d-sm-none small bg-white text-muted rounded-1 border px-2 py-1 ms-1'>Ad</span></h6></div></a></div>", "<div class='p-2'><a href='https://goto.etherscan.com/rd/96368KZGVTGESEZ4PANC1FX9U' rel='nofollow' target='_blank' data-bs-toggle='tooltip' data-bs-trigger='hover' title='Links to an External Advertiser site' class='search-panel-ads d-flex align-items-center p-2 rounded'><div class='me-2'><img width='22' src='/images/gen/remittix_20.png' alt='Remittix'></div><div class='text-truncate'><h6 class='d-flex align-items-center fs-sm text-dark mb-0'><div class='text-truncate me-2'>Join Remittix Presale Now!</div><span class='d-none d-sm-inline-block small bg-white text-muted rounded-1 border px-2 py-1 ms-1'>Sponsored</span><span class='d-inline-block d-sm-none small bg-white text-muted rounded-1 border px-2 py-1 ms-1'>Ad</span></h6></div></a></div>"];
+        gotAd = ["ShowAds					"];
+        
+    </script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" /><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/assets/vendor/font-awesome/css/all.min.css?v=25.1.2.0">
+    <link rel="stylesheet" href="/assets/vendor/autocomplete/dist/css/autocomplete.min.css?v=25.1.2.0" />
+
+    <link rel="stylesheet" href="/assets/css/theme.min.css?v=25.1.2.0">
+    <link rel="stylesheet" href="/assets/css/custom.css?v=25.1.2.0">
+
+    <script src="/assets/vendor/jquery/dist/jquery.min.js?v=25.1.2.0"></script>
+    <script type="text/javascript" src="/jss/blockies.js?v=25.1.2.0"></script>
+
+    <script type="text/javascript" src="/assets/js/theme-appearance.js?v=25.1.2.0"></script>
+
+    <style>
+        .autolink-safari a {
+            pointer-events: none !important;
+            text-decoration: none !important;
+            color: inherit !important;
+        }
+
+        #masterNoticeBar div.alert a{
+            color:#fff !important; 
+            text-decoration: underline !important;
+        }
+        .word-break{word-break: break-all !important;}
+        .min-with50{min-width: 50px !important;}
+
+    </style>
+
+    <style> .dw6uqxcyqsk { -ms-flex-pack: center; justify-content: center; } .amtamyxmh9c { border-top: 1px solid #e7eaf3 !important; } body.dark-mode .amtamyxmh9c { border-color: #18365b !important; } @media (min-width: 992px) { .bpagtirrkpc { display: block !important; } } @media (min-width: 992px) { .cgrxqaqqmtl { display: inline-block !important; } }  </style>
+    <title>Etherscan :: My Address Private Notes</title>
+    <style>
+        .truncate {
+            width: 350px;
+            white-space: normal;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .fav {
+            cursor: pointer;
+            color: #e8b342; /*color: #337ab7;*/
+        }
+
+        .un-fav {
+            cursor: pointer;
+            color: #bdc5d1;
+        }
+
+        .un-fav-title {
+            color: #bdc5d1;
+        }
+
+        .htms-link-custom {
+            color: #77838f !important;
+        }
+
+        .htms-link-custom:hover {
+            color: #fff !important;
+        }
+
+        .icon-loading-tag{ 
+            color: gray; 
+            min-height: 30px;
+        }
+
+        [data-bs-theme=dim] .icon-loading-tag, [data-bs-theme=dark] .icon-loading-tag{
+            color: #c5c5c5; 
+        }
+    </style>
+    <script type="text/javascript">
+        function hidealertmsg() {
+            $("#divfavalertmsg").fadeTo(2700, 500).slideUp(500, function () {
+                $("#divfavalertmsg").slideUp(500);
+            });
+        }
+    </script>
+</head>
+
+
+<body id="body" class="d-flex flex-column min-vh-100">
+
+    <section id="masterNoticeBar">
+        <!--Maintenance Message-->
+        
+        <!--End Maintenance Message-->
+    </section>
+
+    <!-- ========== TOPBAR ========== -->
+    <section id="masterTopBar" class="sticky-top bg-white border-bottom py-2 d-print-none">
+        <div class="container-xxl d-flex align-items-center justify-content-between">
+            
+            <div id="ethPrice" class="d-none d-md-flex align-items-center gap-4 w-100 fs-sm">                
+                <div class="text-muted"><span class="text-muted">ETH Price:</span> <a href='/chart/etherprice'>$3,238.85</a><span data-bs-toggle="tooltip" data-bs-placement="top" title="Changes in the last 24 hours"><span class='text-danger'> (-1.46%)</span></span></div><div class='text-muted d-none d-lg-block'><i class="fad fa-gas-pump me-1"></i> Gas: <span id='spanGasTooltip' data-bs-toggle='tooltip' data-bs-html='true' title='Base Fee: 2.816 Gwei<br>Priority Fee: 0.055 Gwei'><a href='/gastracker'><span class='gasPricePlaceHolder'>2.871</span> Gwei</a></span></div>
+                </div>
+
+            <div class="d-flex justify-content-end align-items-center gap-2 w-100">
+                <div id="frmMaster" class="search-panel-container flex-grow-1 position-relative" style="width: 30rem;">
+	
+                    <form action="/search" method="GET" autocomplete="off" spellcheck="false" class="auto-search-max-height">
+                        <span class="d-flex align-items-center position-absolute top-0 bottom-0" title="Search" style="left: 0.75rem;">
+                            <i class="fa-regular fa-search fs-5 text-secondary"></i>
+                        </span>
+
+                        <input type="text" class="form-control form-control-lg bg-light bg-focus-white pe-20" autocomplete="off" spellcheck="false" id="search-panel" name="q" placeholder="Search by Address / Txn Hash / Block / Token / Domain Name" aria-describedby="button-header-search" onkeyup="handleSearchText(this);" maxlength="68" style="padding-left: 2.375rem;" />
+
+                        <a href="javascript:;" class="clear-icon d-none align-items-center position-absolute top-0 bottom-0 my-auto d-flex align-items-center" style="right: 3.375rem; cursor:pointer;">
+                            <i class="fa-regular fa-xmark fs-5 text-secondary"></i>
+                        </a>
+                        <a href="javascript:;" class="search-icon d-none btn btn-sm btn-white my-1.5 align-items-center position-absolute top-0 bottom-0 d-flex align-items-center" style="right: 0.75rem; cursor:pointer;">
+                            <i class="fa-regular fa-arrow-turn-down-left text-secondary"></i>
+                        </a>
+
+                        <input type="hidden" value="" id="hdnSearchText" />
+                        <input type="hidden" value="" id="hdnSearchLabel" />
+                        <input id="hdnIsTestNet" value="False" type="hidden" />
+
+                        <span class="shortcut-slash-icon align-items-center position-absolute top-0 bottom-0 align-items-center d-none d-sm-flex" title="Search" style="right: 0.5rem;">
+                            <kbd class="bg-dark bg-opacity-25 fw-semibold px-2 py-0.5 text-white">/</kbd>
+                        </span>
+                    </form>
+                
+</div>
+
+                <div id="divFeatureExplainer" class="dropdown d-none d-lg-block">
+                    <button class="btn btn-lg btn-white content-center p-0" type="button" id="dropdownTopbarFeatures" data-bs-toggle="dropdown" aria-expanded="false" style="width: 2.375rem; height: 2.375rem;">
+                        <i class="far fa-book-open fa-fw"></i>
+                        
+                        <div id="divWithoutRoundCircle">
+                            <span class="visually-hidden">New alerts</span>
+                        </div>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownTopbarFeatures" style="min-width: 16rem; max-width: 20rem;">
+                        <div class="overflow-y-auto scrollbar-custom" style="max-height: 15rem;">
+                            <div id="divDefaultList">
+                                
+                                <a class="dropdown-item d-flex align-items-baseline gap-1" href="https://info.etherscan.com/site-settings/">
+                                    <i class="far fa-question-circle fa-fw"></i>
+                                    <div class="text-truncate">What can Site Settings be Used For?</div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-baseline gap-1" href="https://info.etherscan.com/optimized-search-bar/">
+                                    <i class="far fa-question-circle fa-fw"></i>
+                                    <div class="text-truncate">Using the Optimized Search Bar</div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-baseline gap-1" href="https://info.etherscan.com/public-name-tags-labels/">
+                                    <i class="far fa-question-circle fa-fw"></i>
+                                    <div class="text-truncate">What are Public Name Tags and Labels?</div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-baseline gap-1" href="https://info.etherscan.com/cards/">
+                                    <i class="far fa-question-circle fa-fw"></i>
+                                    <div class="text-truncate">What are Etherscan Cards?</div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <hr class="dropdown-divider">
+                        <a class="dropdown-item d-flex align-items-baseline gap-1" href="https://info.etherscan.com/">
+                            <i class="far fa-book-open fa-fw"></i> All Knowledge Base articles
+                        </a>
+                    </div>
+                </div>
+
+                <div id="divThemeSetting" class="dropdown d-none d-lg-block">
+                    <button class="btn btn-lg btn-white text-primary content-center" type="button" id="dropdownMenuTopbarSettings" data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-expanded="false" style="width: 2.375rem; height: 2.375rem;">
+                        <span class="theme-btn-main"><i class="far fa-sun-bright theme-icon-active" data-href="#fa-sun-bright"></i></span>
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuTopbarSettings">
+                        <li>
+                            <button type="button" class="dropdown-item theme-btn active" data-bs-theme-value="light" onclick="setThemeMode('light');">
+                                <i class="far fa-sun-bright fa-fw dropdown-item-icon theme-icon me-1" data-href="#fa-sun-bright"></i> Light
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="dropdown-item theme-btn" data-bs-theme-value="dim" onclick="setThemeMode('dim');">
+                                <i class="far fa-moon-stars fa-fw dropdown-item-icon theme-icon me-1" data-href="#fa-moon-stars"></i> Dim
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="dropdown-item theme-btn" data-bs-theme-value="dark" onclick="setThemeMode('dark');">
+                                <i class="far fa-moon fa-fw dropdown-item-icon theme-icon me-1" data-href="#fa-moon"></i> Dark
+                            </button>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/settings">
+                                <i class="far fa-gear fa-fw dropdown-item-icon me-1"></i> Site Settings <i class="far fa-arrow-right ms-1"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="divTestNet" class="dropdown d-none d-lg-block">
+                    <button class="btn btn-lg btn-white content-center" type="button" id="dropdownTopbarNetworks" data-bs-toggle="dropdown" aria-expanded="false" style="width: 2.375rem; height: 2.375rem;">
+                        <img width="10" data-img-theme="light" src="/images/svg/brands/ethereum-original.svg" alt="Ethereum Logo">
+                        <img width="10" data-img-theme="darkmode" src="/images/svg/brands/ethereum-original-light.svg" alt="Ethereum Logo">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownTopbarNetworks">
+                        
+                        <li>
+                            <a href="https://etherscan.io" id="LI_Mainnet" class="dropdown-item active active">
+                                Ethereum Mainnet
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cn.etherscan.com/?lang=zh-CN" id="LI_Mainnet_CN" class="dropdown-item">
+                                Ethereum Mainnet <span class="badge border bg-light text-dark ms-1">CN</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://beaconscan.com/" id="LI2" class="dropdown-item">
+                                Beaconscan <span class="badge border bg-light text-dark ms-1">ETH2</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                       
+                        <li>
+                            <a href="https://sepolia.etherscan.io" id="LI9" class="dropdown-item">
+                                Sepolia Testnet
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://holesky.etherscan.io" id="A2" class="dropdown-item">
+                                Holesky Testnet
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== TOPBAR ========== -->
+
+    <!-- ========== HEADER ========== -->
+    <header id="masterHeader" class="header border-bottom d-print-none">
+        <nav class="navbar navbar-expand-lg navbar-light py-3 py-lg-0">
+            <div class="container-xxl position-relative">
+                <a class="navbar-brand" href="/" target="_parent" aria-label="Etherscan">
+                    
+                    <img width="150" data-img-theme="light" src="/assets/svg/logos/logo-etherscan.svg?v=0.0.5" alt="Etherscan Logo">
+                    <img width="150" data-img-theme="darkmode" src="/assets/svg/logos/logo-etherscan-light.svg?v=0.0.5" alt="Etherscan Logo">
+                </a>
+
+                <div class="d-flex align-items-center gap-4">
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav gap-1 gap-lg-0 pt-4 pt-lg-0">
+                        <li class="nav-item">
+                            <a href="/" id="LI_default" class="nav-link" aria-current="page">
+                                Home
+                            </a>
+                        </li>
+
+                        <!-- Blockchain -->
+                        <li class="nav-item dropdown">
+                            <a href="javascript:;" id="LI_blockchain" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blockchain</a>
+                            <ul class="dropdown-menu dropdown-menu-border" style="min-width: 14rem;">
+                                <li>
+                                    <a href="/txs" id="LI12" class="dropdown-item">
+                                        Transactions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/txsPending" id="LI16" class="dropdown-item">
+                                        Pending Transactions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/txsInternal" id="LI14" class="dropdown-item">
+                                        Contract Internal Transactions
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/txsBeaconDeposit" id="LI22" class="dropdown-item">
+                                        Beacon Deposits
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/txsBeaconWithdrawal" id="LI_BeaconWithdrawals" class="dropdown-item">
+                                        Beacon Withdrawals
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/txsBlobs" id="LI_txsBlobs" class="dropdown-item">
+                                        View Blobs
+                                    </a>
+                                </li>
+                                
+                                 <li>
+                                     <a href="/txsAA" id="LITxsAA" class="dropdown-item">
+                                         AA Transactions <span class="badge border bg-light text-muted">Beta</span></a>
+                                 </li>
+                                
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a href="/blocks" id="LI_blocks" class="dropdown-item">
+                                        View Blocks
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/blocks_forked" id="LI_blocks2" class="dropdown-item">
+                                        Forked Blocks (Reorgs)
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/uncles" id="LI8" class="dropdown-item">
+                                        Uncles
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a href="/accounts" id="LI_accountall" class="dropdown-item">
+                                        Top Accounts
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/contractsVerified" id="LI_contract_verified" class="dropdown-item">
+                                        Verified Contracts
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- End Blockchain -->
+
+                        
+                        <!-- Tokens -->
+                        <li class="nav-item dropdown">
+                            <a href="javascript:;" id="LI_tokens" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tokens</a>
+                            <ul class="dropdown-menu dropdown-menu-border" style="min-width: 14rem;">
+                                <li>
+                                    <a href="/tokens" id="LI21" class="dropdown-item">
+                                        Top Tokens <span class="small text-muted">(ERC-20)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/tokentxns" id="LI1" class="dropdown-item">
+                                        Token Transfers <span class="small text-muted">(ERC-20)</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- End Tokens -->
+
+                        <!-- NFTs -->
+                        <li class="nav-item dropdown">
+                            <a href="javascript:;" id="LI_Nfts" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">NFTs</a>
+                            <ul class="dropdown-menu dropdown-menu-border" style="min-width: 14rem;">
+                                
+                                
+                                
+                                
+                                
+                                <li>
+                                    <a href="/nft-top-contracts" id="LI63" class="dropdown-item">
+                                        Top NFTs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/nft-top-mints" id="LI67" class="dropdown-item">
+                                        Top Mints
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/nft-trades" id="LI64" class="dropdown-item">
+                                        Latest Trades
+                                    </a>
+                                </li>
+                                 <li>
+                                    <a href="/nft-transfers" id="LI65" class="dropdown-item">
+                                        Latest Transfers
+                                    </a>
+                                </li>
+                                 <li>
+                                    <a href="/nft-latest-mints" id="LI66" class="dropdown-item">
+                                        Latest Mints
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- End NFTs -->
+
+                        <!-- Defi -->
+                        
+                        
+                        <!-- End Defi -->
+
+                        <!-- Resrouces -->
+                        <li class="nav-item dropdown">
+                            <a href="javascript:;" id="LI_resources" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                            <ul class="dropdown-menu dropdown-menu-border" style="min-width: 14rem;">
+                                <li>
+                                    <a href="/charts" id="LI_charts2" class="dropdown-item">
+                                        Charts And Stats
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/topstat" id="LI_topstat" class="dropdown-item">
+                                        Top Statistics
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/leaderboard" id="LI_Leaderboard" class="dropdown-item">
+                                        Leaderboard
+                                    </a>
+                                </li>
+                                
+                                
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a href="/directory" id="LI62" class="dropdown-item">
+                                        Directory
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://info.etherscan.com/newsletters/" id="LI60" class="dropdown-item">
+                                        Newsletter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://info.etherscan.com/" id="LI61" class="dropdown-item">
+                                        Knowledge Base
+                                    </a>
+                                </li>
+                                
+                                
+                            </ul>
+                        </li>
+                        <!-- End Resrouces -->
+
+                        <!-- Developers -->
+                        <li class="nav-item dropdown">
+                            <a href="#" id="li_developers" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Developers</a>
+                            <ul class="dropdown-menu dropdown-menu-border" style="min-width: 14rem;">
+                                <li>
+                                    <a href="/apis" id="LI5" class="dropdown-item">
+                                        API Plans
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://docs.etherscan.io/etherscan-v2" id="LI6" class="dropdown-item" target="_blank">
+                                        API Documentation
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a href="/code-reader" id="A1" class="dropdown-item">
+                                        Code Reader <span class="badge border bg-light text-muted">Beta</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/verifyContract" id="LI17" class="dropdown-item">
+                                        Verify Contract
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/find-similar-contracts" id="LI55" class="dropdown-item">
+                                        Similar Contract Search
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/searchcontract" id="LI53" class="dropdown-item">
+                                        Smart Contract Search
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/contractdiffchecker" id="LI54" class="dropdown-item">
+                                        Contract Diff Checker
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a href="/vyper" id="LI27" class="dropdown-item">
+                                        Vyper Online Compiler
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/opcode-tool" id="LI24" class="dropdown-item">
+                                        Bytecode to Opcode
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/pushTx" id="LI10" class="dropdown-item">
+                                        Broadcast Transaction
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- End Developers -->
+
+                        <!-- More -->
+                        <li class="nav-item dropdown position-initial">
+                            <a href="javascript:;" id="LI_services2" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+                            <div class="dropdown-menu dropdown-menu-border dropdown-menu-mega">
+                                <div class="row">
+                                    <div class="col-lg order-last order-lg-first">
+                                        <div class="d-flex flex-column bg-light h-100 rounded-3 p-5">
+                                            <div>
+                                                <h6>Tools &amp; Services</h6>
+                                                <p>Discover more of Etherscan's tools and services in one place.</p>
+                                            </div>
+
+                                            <div class="mt-auto">
+                                                <p class="text-muted mb-2">Sponsored</p>
+                                                <a target="_blank" href="https://chat.blockscan.com">
+                                                    <img width="140" data-img-theme="light" src="/images/svg/blockscan-logo-light.svg?v=0.0.5" alt="" />
+                                                    <img width="140" data-img-theme="dim" src="/images/svg/blockscan-logo-dark.svg?v=0.0.5" alt="" />
+                                                    <img width="140" data-img-theme="dark" src="/images/svg/blockscan-logo-dark.svg?v=0.0.5" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm py-5">
+                                        <h6 class="px-3 mb-3">Tools</h6>
+                                        <ul class="list-unstyled">
+                                             <li>
+                                                 <a href="/inputdatadecoder" id="LI86" class="dropdown-item">
+                                                     <i class="far fa-file-binary dropdown-item-icon fa-fw me-1"></i>Input Data Decoder <span class="badge border bg-light text-muted">Beta</span>
+                                                 </a>
+                                             </li>
+                                            <li>
+                                                <a href="/unitconverter" id="LI50" class="dropdown-item">
+                                                    <i class="far fa-arrows-rotate dropdown-item-icon fa-fw me-1"></i>Unit Converter
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/exportData" id="LI51" class="dropdown-item">
+                                                    <i class="far fa-download fa-fw me-1"></i>CSV Export
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/balancecheck-tool" id="LI52" class="dropdown-item">
+                                                    <i class="far fa-file-invoice-dollar fa-fw me-1"></i>Account Balance Checker
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-sm py-5">
+                                        <h6 class="px-3 mb-3">Explore</h6>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="/gastracker" id="LI19" class="dropdown-item">
+                                                    <i class="far fa-gas-pump dropdown-item-icon fa-fw me-1"></i>Gas Tracker
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/dex" id="LI4" class="dropdown-item">
+                                                    <i class="far fa-arrow-right-arrow-left dropdown-item-icon fa-fw me-1"></i>DEX Tracker
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/nodetracker" id="LI46" class="dropdown-item">
+                                                    <i class="far fa-server dropdown-item-icon fa-fw me-1"></i>Node Tracker
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/labelcloud" id="LI41" class="dropdown-item">
+                                                    <i class="far fa-signs-post dropdown-item-icon fa-fw me-1"></i>Label Cloud
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/name-lookup" id="LI26" class="dropdown-item">
+                                                    <i class="far fa-magnifying-glass-chart dropdown-item-icon fa-fw me-1"></i>Domain Name Lookup
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-sm py-5">
+                                        <h6 class="px-3 mb-3">Services</h6>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="/tokenapprovalchecker" id="LI49" class="dropdown-item">
+                                                    <i class="far fa-shield-keyhole dropdown-item-icon fa-fw me-1"></i>Token Approvals <span class="badge border bg-light text-muted">Beta</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/verifiedSignatures" id="LI29" class="dropdown-item">
+                                                    <i class="far fa-signature-lock dropdown-item-icon fa-fw me-1"></i>Verified Signature
+                                                </a>
+                                            </li>
+                                             <li>
+                                                <a class="dropdown-item" href="/idm">
+                                                    <i class="far fa-message-lines dropdown-item-icon fa-fw me-1"></i>Input Data Messages (IDM) <span class="badge border bg-light text-muted">Beta</span>
+                                                </a>
+                                            </li>
+                                            
+                                            <li>
+                                                <a href="/advanced-filter" id="LI31" class="dropdown-item">
+                                                    <i class="far fa-filters dropdown-item-icon fa-fw me-1"></i>Advanced Filter <span class="badge border bg-light text-muted">Beta</span>
+                                                </a>
+                                            </li>
+                                            
+                                            <li>
+                                                <a class="dropdown-item" href="https://chat.blockscan.com" target="_blank">
+                                                    <i class="far fa-messages dropdown-item-icon fa-fw me-1"></i>Blockscan Chat <i class="far fa-arrow-up-right-from-square text-muted ms-1"></i> <span class="badge border bg-light text-muted">Beta</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End More -->
+                        
+
+                        <li class="nav-item dropdown d-block d-lg-none">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explorers</a>
+                            <ul class="dropdown-menu dropdown-menu-border" style="min-width: 14rem;">
+                                
+                                <li>
+                                    <a href="https://etherscan.io" id="LI_Mainnet_1" class="dropdown-item active active">
+                                        Ethereum Mainnet
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://cn.etherscan.com/?lang=zh-CN" id="LI_Mainnet_CN_1" class="dropdown-item">
+                                        Ethereum Mainnet <span class="badge border bg-light text-dark ms-1">CN</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://beaconscan.com/" id="LI77" class="dropdown-item">
+                                        Beaconscan <span class="badge border bg-light text-dark ms-1">ETH2</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a href="https://goerli.etherscan.io" id="LI78" class="dropdown-item">
+                                        Goerli Testnet
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://sepolia.etherscan.io" id="LI79" class="dropdown-item">
+                                        Sepolia Testnet
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://holesky.etherscan.io" id="A4" class="dropdown-item">
+                                        Holesky Testnet
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+
+                        <!-- Appearance & Settings -->
+                        <li class="nav-item dropdown d-block d-lg-none">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Appearance &amp; Settings</a>
+                            <ul class="dropdown-menu dropdown-menu-border" style="min-width: 14rem;">
+                                <li>
+                                    <button type="button" class="dropdown-item theme-btn active" data-bs-theme-value="light" onclick="setThemeMode('light');">
+                                        <i class="far fa-sun-bright fa-fw dropdown-item-icon theme-icon me-1" data-href="#fa-sun-bright"></i> Light
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item theme-btn" data-bs-theme-value="dim" onclick="setThemeMode('dim');">
+                                        <i class="far fa-moon-stars fa-fw dropdown-item-icon theme-icon me-1" data-href="#fa-moon-stars"></i> Dim
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item theme-btn" data-bs-theme-value="dark" onclick="setThemeMode('dark');">
+                                        <i class="far fa-moon-stars fa-fw dropdown-item-icon theme-icon me-1" data-href="#fa-moon"></i> Dark
+                                    </button>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/settings">
+                                        <i class="far fa-gear fa-fw dropdown-item-icon me-1"></i> Site Settings <i class="far fa-arrow-right ms-1"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- End Appearance & Settings -->
+                        
+                        
+                        <li class="nav-item align-self-center d-none d-lg-block">
+                            <span class="text-secondary">|</span>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="far fa-user-circle me-1"></i>LEOH559
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-border" style="min-width: 14rem; right: 0; left: auto;">
+                                <li>
+                                    <a class="dropdown-item" href="/myaccount">
+                                        My Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/myaddress">
+                                        Watch List
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/mynotes_tx">
+                                        Txn Private Notes
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/mynotes_address">
+                                        Private Name Tags
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/mytokenignore">
+                                        Token Ignore List
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/myapikey">
+                                        API Keys
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/myverify_address">
+                                        Verified Address
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/mycustomabi">
+                                        Custom ABI
+                                    </a>
+                                </li>
+                                 
+                                <li>
+                                    <a class="dropdown-item" href="/myadvancedfilters">
+                                       Advanced Filter
+                                    </a>
+                                </li>
+                                 
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="btn btn-sm btn-soft-primary d-lg-block py-2 px-4" href="/login?cmd=logout">
+                                        <i class="far fa-sign-out me-1"></i> Sign Out
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!-- ==========  END HEADER ========== -->
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main id="content" class="main-content" role="main">
+        <input type="hidden" name="hdnAgeText" id="hdnAgeText" value="Age" />
+        <input type="hidden" name="hdnDateTimeText" id="hdnDateTimeText" value="Date Time (UTC)" />
+        <input type="hidden" name="hdnAgeTitle" id="hdnAgeTitle" value="Click to show Age Format" />
+        <input type="hidden" name="hdnDateTimeTitle" id="hdnDateTimeTitle" value="Click to show Datetime Format" />
+        <input type="hidden" name="hdnTxnText" id="hdnTxnText" value="Txn Fee" />
+        <input type="hidden" name="hdnGasPriceText" id="hdnGasPriceText" value="Gas Price" />
+        <input type="hidden" name="hdnTxnFeeTitle" id="hdnTxnFeeTitle" value="(Gas Price * Gas Used by Txns) in Ether" />
+        <input type="hidden" name="hdnGasPriceTitle" id="hdnGasPriceTitle" value="Gas Price in Gwei" />
+
+        
+
+    <!-- Page Heading --><section class='bg-dark pt-8 pb-20' style='background-image: url(../images/svg/waves-light.svg?v=0.2.0);'><div class='container-xxl'><div class='d-flex flex-wrap justify-content-between align-items-center gap-4'><!-- Page Title --><div><a class='small text-white opacity-75' href='/'><i class='far fa-arrow-left'></i> Back Home</a><h1 class='h5 text-white my-1'>Address Private Name Tags</h1></div><!-- End Page Title --><!-- Action Buttons --><div class='d-flex gap-3'><a class='btn btn-light' href='/login?cmd=logout'><i class='far fa-sign-out me-1'></i> Sign Out</a></div><!-- End Action Buttons --></div></div></section><!-- End Page Heading -->
+    
+    <!-- Content -->
+    <div class="container-xxl pb-16 mt-n14">
+        <div class="row mx-gutters-md-small">
+            <!-- Sidebar -->
+            
+
+<div class="col-lg-4 col-xl-3 mb-4 mb-lg-0">
+    <div class="card p-4">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+            <div class="text-break">
+                <div class="fw-medium fs-5">
+                    Leoh559
+                </div>
+                <div class="text-muted">
+                    <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b3dfd6dcd0d2c1c1dadfdfdc8a818386f3d4ded2dadf9dd0dcde">[email&#160;protected]</a>
+                </div>
+            </div>
+
+            <div class="d-block d-lg-none">
+                <button class="btn btn-white" type="button" data-bs-toggle="collapse" data-bs-target="#asideNav" aria-controls="asideNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="far fa-bars me-sm-1"></i>
+                    <span class="d-none d-sm-inline-block">Sidebar Menu</span>
+                </button>
+            </div>
+        </div>
+
+        <nav class="navbar-expand-lg">
+            <div class="collapse navbar-collapse flex-column" id="asideNav">
+                <hr class="w-100 mt-6 mb-2">
+
+                <ul class="nav nav-pills nav-pills-flush flex-column w-100 gap-1 1px-n4">
+                    <li class="nav-item fw-medium text-uppercase small px-3 mt-4 mb-1">
+                        Account
+                    </li>
+                    <li class="nav-item">
+                        <a href="/myaccount" id="ContentPlaceHolder1_account_sidebar_overview" class="nav-link py-2 px-3">
+                            <i class="far fa-house-user fa-fw me-1"></i> Account Overview
+                        </a>  
+                    </li>
+                    <li class="nav-item">
+                        <a href="/mysettings" id="ContentPlaceHolder1_account_sidebar_settings" class="nav-link py-2 px-3">
+                            <i class="far fa-user-shield fa-fw me-1"></i> Account Settings 
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/my-public-profile" id="ContentPlaceHolder1_account_sidebar_etherscanConnect" class="nav-link py-2 px-3">
+                            <i class="far fa-head-vr fa-fw me-1"></i> Public Profile
+                        </a>
+                    </li>
+
+                    <li class="nav-item fw-medium text-uppercase small px-3 mt-4 mb-1">
+                        Lists
+                    </li>
+                    <li class="nav-item">
+                        <a href="/myaddress" id="ContentPlaceHolder1_account_sidebar_watchList" class="nav-link py-2 px-3">
+                            <i class="far fa-heart fa-fw me-1"></i> Watch List
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/mynotes_address" id="ContentPlaceHolder1_account_sidebar_privateTag" class="nav-link py-2 px-3 active">
+                            <i class="far fa-sticky-note fa-fw me-1"></i> Private Name Tags
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/mynotes_tx" id="ContentPlaceHolder1_account_sidebar_txnPrivateNote" class="nav-link py-2 px-3">
+                            <i class="far fa-file fa-fw me-1"></i> Txn Private Notes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/mytokenignore" id="ContentPlaceHolder1_account_sidebar_tokenIgnoreList" class="nav-link py-2 px-3">
+                            <i class="far fa-eye-slash fa-fw me-1"></i> Token Ignore List
+                        </a>
+                    </li>
+                    
+                     <li class="nav-item"> 
+                        <a href="/myadvancedfilters" id="ContentPlaceHolder1_account_sidebar_advancedfilterList" class="nav-link py-2 px-3">
+                            <i class="far fa-filters fa-fw me-1"></i> Advanced Filter
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item fw-medium text-uppercase small px-3 mt-4 mb-1">
+                        Others
+                    </li>
+                    <li class="nav-item">
+                        <a href="/myapikey" id="ContentPlaceHolder1_account_sidebar_apiKeys" class="nav-link py-2 px-3">
+                            <i class="far fa-key fa-fw me-1"></i> API Keys
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/myverify_address" id="ContentPlaceHolder1_account_sidebar_verifiedAddress" class="nav-link py-2 px-3">
+                            <i class="far fa-badge-check fa-fw me-1"></i> Verified Addresses
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/mycustomabi" id="ContentPlaceHolder1_account_sidebar_customAbi" class="nav-link py-2 px-3">
+                            <i class="far fa-tasks fa-fw me-1"></i> Custom ABIs
+                        </a>
+                    </li>
+                    
+                   
+                    
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+            
+            <!-- End Sidebar -->
+
+            <!-- Right Content -->
+            <div class="col-lg-8 col-xl-9">
+                <!-- Private Name Tags -->
+                <div class="card mb-4" id="spanResult">
+                    <!-- Alert -->
+                    
+                    
+                    <!-- End Alert -->
+
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h3 class="card-header-title">
+                            Address Private Name Tags
+                            <span class="badge bg-secondary bg-opacity-10 border border-secondary border-opacity-25 text-dark fw-medium rounded-pill">
+                                <span id="ContentPlaceHolder1_litQuataLimitNumber">5000 limit</span></span>
+                        </h3>
+
+                        <a href="javascript:;" id="ContentPlaceHolder1_addnew" data-bs-toggle="modal" data-bs-target="#responsive" class="btn btn-primary text-nowrap" onclick="addNewNote();">
+                            <i class='far fa-plus me-1'></i> Add
+                        </a>
+                    </div>
+
+                    <div class="card-body">
+                        <p>A private name tag (up to 35 chars) and memo (up to 500 chars) for individual addresses can be saved and is useful for labelling addresses of interest.</p>
+
+                        <div class="d-flex flex-wrap align-items-center gap-1">
+                            <!-- Navs & Filters -->
+                            <ul class="nav nav-pills text-nowrap snap-x-mandatory overflow-x-auto flex-nowrap py-1 mb-2 gap-1 scrollbar-custom" id="myTab" role="tablist">
+                             <li class='nav-item snap-align-start'>  <a class='nav-link ' href='/mynotes_address'>All</a></li><li class='nav-item snap-align-start' id='li_group_item_2475'>  <a class='nav-link active' href='/mynotes_address?g=2475'>https://etherscan.io/token/0xdac17f958d2ee523a2206</a></li><li class='nav-item snap-align-start' id='li_group_item_2477'>  <a class='nav-link ' href='/mynotes_address?g=2477'>0xae78736cd615f374d3085123a210448e74fc6393</a></li>
+                            </ul>
+                            <!-- End Navs & Filters -->
+
+                            <div id="ContentPlaceHolder1_btnCreateGroup" class="mb-2">
+                              <a class="btn btn-sm btn-ghost-white text-dark rounded fw-medium" href="javascript:;" onclick="mynotes.open_model('insert')">
+                                <i class="far fa-plus me-0.5"></i> Add Group
+                              </a>
+                            </div>
+                          </div>
+
+                        <!-- Table Top Part -->
+                        <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="text-muted">
+                                    &nbsp;1 address
+                                </span>
+                                <div id="conEditGroup" style="display: none;">
+                                    <span class="text-muted">•</span>
+                                    <button id="btnEditGroup" class="btn btn-sm btn-white ms-1" style="cursor: pointer;" onclick="mynotes.open_model('update')">
+                                      <i class="far fa-pen small me-0.5"></i> Edit Group
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="d-flex gap-2">
+                                <!-- Search --><div class='dropdown order-md-2'><button class='btn btn-sm btn-secondary' type='button' id='dropdownSearchFilter' data-bs-toggle='dropdown' aria-expanded='false'><i class='far fa-search fa-fw'></i></button><div class='dropdown-menu' aria-labelledby='dropdownSearchFilter' style='min-width: 10rem;'><div class='input-group' style='min-width: 22rem;'><form action='/mynotes_address' method='get' class='js-focus-state input-group input-group-sm w-100' autocomplete='off'><input class='form-control py-2' id='q' name='q' type='search' value='' placeholder='Search Address or Tag' maxlength='50'><button type='submit' class='btn btn-primary' data-bs-toggle='tooltip' title='Search Address or Tag'>Find</button></form></div></div></div><!-- End Search -->
+
+                                
+                            </div>
+                        </div>
+                        <!-- End Table Top Part -->
+                    </div>
+
+                    <!-- Table -->
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead id="ContentPlaceHolder1_theadMyAddressNotes" class="text-nowrap">
+                                <tr>
+                                    <th scope="col" width="10" class="pr-0">
+                                        <span data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="hover" data-bs-content="Click the star icon to mark your favorite address to the top of the list.">
+                                            <i class="far fa-question-circle text-secondary"></i>
+                                        </span>
+                                    </th>
+                                    <th scope="col">Address</th>
+                                    <th scope="col" class="text-nowrap">Private Name Tag</th>
+                                    <th scope="col">&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td class='align-top pr-0'><a class='me-1' onclick="javascript:updateFavouriteStatus('4724667');"><span id='fnt_4724667'><i class='fa fa-star icon-star-active'></i></span></a></td><td><div class='d-flex gap-2'><div><img class='rounded-circle' width='24' src='data:image/png;base64, /9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABAAEADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwChRRRXyB7x6RXm9ekV5vX0nEP/AC7+f6HxPB3/AC+/7d/9uCvSK83r0ijh7/l58v1DjH/lz/29/wC2nm9FFFfNn2x6RRXgVe+195hMX9Yvpax+R47A/VOX3r3v0ttbzCvN6KK+VzHMfrnL7trX633t5LsfoOTZN/ZvP7/NzW6W2v5vuFekV5vRRl2Y/U+b3b3t1ttfyfcM5yb+0uT3+Xlv0vvbzXY9IoorwKvqsXi/q9tL3Pz7A4H63ze9a1ul97+Z77RRRXaeeeb0UUV+bH7YFFFFAHpFFFFfpJ+Jnm9ekV5vXpFfNcPf8vPl+p9txj/y5/7e/wDbQrzevSKK9PMcv+ucvvWtfpfe3mux4mTZz/ZvP7nNzW622v5Pueb16RRRRl2X/U+b3r3t0ttfzfcM5zn+0uT3OXlv1vvbyXYK83r0ivN68ziH/l38/wBD2+Dv+X3/AG7/AO3H/9k=' alt='Address'></div><div><div class='d-flex align-items-center gap-1'><a href='/address/0x9642b23ed1e01df1092b92641051881a322f5d4e' class=''me-1' data-bs-toggle='tooltip' title='0x9642b23ed1e01df1092b92641051881a322f5d4e'><span class='text-primary' id='a_0x9642b23ed1e01df1092b92641051881a322f5d4e'><span data-highlight-target="0x9642b23Ed1E01Df1092B92641051881a322F5D4E">0x9642b23E...a322F5D4E</span></span></a><a class='js-clipboard link-secondary  ' href='javascript:;' data-clipboard-text='0x9642b23Ed1E01Df1092B92641051881a322F5D4E'   data-bs-toggle='tooltip' data-bs-trigger='hover' title='Copy Address' data-hs-clipboard-options='{ "type": "tooltip", "successText": "Copied!", "classChangeTarget": "#linkIcon_1", "defaultClass": "fa-copy", "successClass": "fa-check" }' ><i id='linkIcon_1' class='far fa-copy fa-fw'></i> </a></div><div class='small mt-1'><span class='text-muted'>Added on:</span> 2024-11-02</div><div class='small mt-1' style='max-width: 20rem;'><span class='text-muted'>Note: </span><span  id='n_0x9642b23ed1e01df1092b92641051881a322f5d4e'></span></div></div></div></td><td><span class='badge bg-light border border-dark dark:border-white border-opacity-10 text-dark fw-normal fs-sm rounded-pill py-1.5' id='t_0x9642b23ed1e01df1092b92641051881a322f5d4e'>Leo</span></td><td class='text-end text-nowrap'><a class='btn btn-sm btn-white me-1' href='javascript:;' data-bs-toggle='modal' data-bs-target='#responsive' data-bs-trigger='hover' title='View/Update Private Tag/Note' onclick="javascript:getnote('0x9642b23ed1e01df1092b92641051881a322f5d4e');" rel='tooltip'><i class='far fa-pen me-1'></i> Edit</a><a class='btn btn-sm btn-white text-danger' href="javascript:;" data-bs-trigger='hover' title='Remove Private Tag/Note' data-bs-toggle='modal' data-bs-target='#myModaldelete' onclick="javascript:getaddress('0x9642b23ed1e01df1092b92641051881a322f5d4e');" rel='tooltip'><i class='far fa-trash'></i></a></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End Table -->
+
+                    <!-- Table Footer -->
+                    <div class="card-footer d-flex flex-wrap justify-content-between align-items-center gap-3">
+                        <!-- Entries -->
+                        <div class="d-flex align-items-center gap-2">
+                        </div>
+                        <!-- End Entries -->
+
+                        <!-- Pagination -->
+                        <nav aria-label="Table navigation">
+                            <div id="ContentPlaceHolder1_PagingPanel">
+                                <ul class="pagination pagination-sm mb-0"><li class="page-item disabled"><span class="page-link" >First</span></li><li class="page-item disabled"><span class="page-link px-3" ><i class="fa fa-chevron-left small"></i></span><span class="sr-only">Previous</span></li><li class="page-item disabled"><span class="page-link text-nowrap">Page 1 of 1</span></li><li class="page-item disabled"><span class="page-link px-3" ><i class="fa fa-chevron-right small"></i></span><span class="sr-only">Previous</span></li><li class="page-item disabled"><span class="page-link" >Last</span></li>
+                            </div>
+                        </nav>
+                        <!-- End Pagination -->
+                    </div>
+                    <!-- End Table Footer -->
+                </div>
+                <!-- End Private Name Tags -->
+            </div>
+            <!-- End Right Content -->
+        </div>
+    </div>
+    <!-- End Content -->
+
+
+    <!-- Modal: Add Group -->
+  <div class="modal fade" id="addGroup" tabindex="-1" aria-labelledby="addGroupLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="titGroup">Add Group</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <form>
+            <div class="mb-4">
+              <label class="form-label" for="addGroupName">Group Name</label> <span class="text-danger"> * </span>
+              <input type="text" class="form-control py-2" id="txtGroupName" maxlength="50" placeholder="e.g. My Addresses">
+            </div>
+
+            <!-- Private Name Tag List -->
+            <div id="listAdvancedFilter">
+              <label class="form-label">Add Private Name Tags</label><span class="text-danger"> * </span>
+              <div class="position-relative mb-4">
+                <span class="d-flex align-items-center position-absolute" title="Search" style="left: 0.75rem;top: 12px;">
+                  <i class="fa-regular fa-search text-secondary"></i>
+                </span>
+
+                <input class="search form-control py-2" type="text" id="txtSearNameTag" placeholder="Search private name tag" aria-label="Search" style="padding-left: 2.15rem;">
+              </div>
+              <div class="list d-flex flex-column scrollbar-custom overflow-y-auto gap-1" style="max-height: 21rem; min-height: 11rem" id="private_name_tag_list"> </div>
+              <!-- End Advanced Filter List -->
+            </div>
+            <!-- End Private Name Tag List -->
+          </form>
+        </div>
+
+        <div class="modal-footer d-flex justify-content-between gap-3 bg-light">
+          <button id="btnGroupDelete" class="btn btn-ghost-white text-danger" style="display:none">Delete Group</button>
+          <div>
+            <a class="btn btn-ghost-white" data-bs-dismiss="modal" href="javascript:;">Cancel</a>
+            <button type="button" id="btnSubmmitGroup" class="btn btn-primary">Create Group</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal: Add Group -->
+
+    <!--Confirm delete group -->
+
+    <div class="modal fade" data-keyboard="false" aria-labelledby="myModalDeleteGroup" aria-hidden="true" id="mdConfirmDeleteGroup">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="myModalDeleteGroup">Confirmation Required</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p> Are you sure you wish to remove this group? </p>
+                    </div>
+
+                    <div class="modal-footer bg-light">
+                        <a data-bs-dismiss="modal" class="btn btn-ghost-white" href="javascript:;">Cancel</a>
+                        <button class="btn btn-primary" type="button" id="btnContinueRemoveGroup">Remove</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--End confirm delete group -->
+
+    <form method="post" action="./mynotes_address?g=2475" onsubmit="javascript:return WebForm_OnSubmit();" id="mymodalform" class="js-validate mx-md-auto">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['mymodalform'];
+if (!theForm) {
+    theForm = document.mymodalform;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZH3I2JFKe0SekqA0rfmlcg9v9BdVef9_hJHsC9pnfiCSh1xx1yi35YkvZ7D72Vx9wA2&amp;t=638628207619783110" type="text/javascript"></script>
+
+
+<script src="/WebResource.axd?d=x2nkrMJGXkMELz33nwnakMAwP0YpazTjKSnmqTtRds_2Kj-szZIBJ-YVmwknfEUmGZd_sZ2iVSw97lbC1GK87vV6CP3vlKkVeYO-WgTBIzk1&amp;t=638628207619783110" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="46CC145B" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="eA2j1F4gQQHAr1NarOYCDVNRIj9OJgoreZv5rlb+qa9rAsa1rB4sdvlQPX5SswqiIMuXJCE1hPDji48hL5lYDMysqZ2N++1kH76knIHG1k7e7apIj/XxzPjkB7dUtjmvQpgO9yjcVnrJuPhVRngTnRbs9KvQumxWfYQ8KwfR/gsMsx1nuAiLd8f/zSKSjK0p9IUZB5gtwXmVvg+mVFkU/RKHZ52qvqHazntnBETj3v/jmKcyDv11OK8cqJt8oIzo" />
+</div>
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdFilterGroupId" id="ContentPlaceHolder1_hdFilterGroupId" value="2475" />
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdGroupName" id="ContentPlaceHolder1_hdGroupName" value="https://etherscan.io/token/0xdac17f958d2ee523a2206" />
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdGroupNoteIds" id="ContentPlaceHolder1_hdGroupNoteIds" value="1738018" />
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="responsive">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="myresponsiveLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="mb-4">
+                            <div class="form-group">
+                                <label class="form-label" for="Address">&nbsp;Ethereum Address</label>
+                                <div class="js-form-message">
+                                    <input name="ctl00$ContentPlaceHolder1$txtAddress" type="text" maxlength="44" id="ContentPlaceHolder1_txtAddress" class="form-control py-2" required="" data-bs-msg="Please enter a valid address" data-bs-error-class="u-has-error" data-bs-success-class="u-has-success" placeholder="Enter a address" />
+                                    <span id="ContentPlaceHolder1_rfvAddress" style="color:Red;font-size:Smaller;display:none;"><br> *Invalid address</span>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="form-group">
+                                <label class="form-label" for="nameTag">&nbsp;Private Name Tag</label>
+                                <textarea name="ctl00$ContentPlaceHolder1$txtPrivateNameTag" id="ContentPlaceHolder1_txtPrivateNameTag" class="js-count-characters form-control py-2" rows="2" data-bs-msg="Please enter private name tag." data-bs-error-class="u-has-error" data-bs-success-class="u-has-success" placeholder="e.g. Donate Address" maxlength="35" data-hs-count-characters-options="{ &quot;output&quot;: &quot;#maxLengthCountCharactersEdit1&quot; }"></textarea>
+                                <span id="ContentPlaceHolder1_rfvPrivateNameTag" class="invalid-feedback" style="font-size:Smaller;display:none;">Please enter private name tag.</span> 
+                                <div class="form-text mt-2">
+                                    Character limit: <span id="maxLengthCountCharactersEdit1" class="text-muted"></span>.
+                                </div>
+                                <span id="privatetagtip" class="form-text small text-muted">
+                                    Private Name Tags (up to 35 characters) can be used for easy identification of addresses
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="form-group">
+                                <label class="form-label" for="nameTag">&nbsp;Private Note</label>
+                                <textarea name="ctl00$ContentPlaceHolder1$txtPrivateNoteArea" id="ContentPlaceHolder1_txtPrivateNoteArea" class="js-count-characters form-control py-2" rows="2" placeholder="Short description.." maxlength="500" data-hs-count-characters-options="{ &quot;output&quot;: &quot;#maxLengthCountCharactersEdit&quot; }"></textarea>
+                                <div class="form-text mt-2">
+                                    Character limit: <span id="maxLengthCountCharactersEdit" class="text-muted"></span>.
+                                </div>
+                                <span id="privatenotetip" class="form-text small text-muted">
+                                    A private note (up to 500 characters) can be attached to this address. Please <strong class="text-dark">DO NOT</strong> store any passwords or private keys here.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer bg-light">
+                        <a data-bs-dismiss="modal" class="btn btn-ghost-white" href="javascript:;" id="closenote">Cancel</a>
+                        <button class="btn btn-primary" type="button" id="savenote" onclick="javascript:updateNote();">Save Changes</button>
+                        <input type="submit" name="ctl00$ContentPlaceHolder1$btnaddnote" value="Create Tag" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$btnaddnote&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ContentPlaceHolder1_btnaddnote" class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalDeleteLabel" aria-hidden="true" id="myModaldelete">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="myModalDeleteLabel">Confirmation Required</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>
+                            Are you sure you wish to remove the address tag?<br />
+                            <span class="text-muted fw-normal" id="removeaddress"></span>
+                        </p>
+                    </div>
+
+                    <div class="modal-footer bg-light">
+                        <a data-bs-dismiss="modal" class="btn btn-ghost-white" href="javascript:;">Cancel</a>
+                        <button class="btn btn-primary" type="button" id="btnContinueRemove" onclick="javascript:removenote();">Remove</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="myModalconfirmPublish">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="myModalLabel">&nbsp;Confirmation Required</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>
+                            By changing the setting to <b>PUBLIC</b>, this particular NameTag entry will be published and can be viewed by other users on your .
+                            Do you wish to continue ?
+                            <span id="txtid" style="display: none"></span>
+
+                            <div class="text-muted mt-1 ">
+                                <i>Tip: Please do not publish your confidential information such as passwords or private keys here</i>
+                            </div>
+                        </p>
+                    </div>
+
+                    <div class="modal-footer bg-light">
+                        <a data-bs-dismiss="modal" class="btn btn-ghost-white" href="javascript:;" onclick="cancelpublish()">Cancel</a>
+                        <button id="btnupdatepicture" data-bs-dismiss="modal" class="btn btn-primary" type="button" onclick="publishentry()" causesvalidation="False">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalFavLabel" aria-hidden="true" id="myModalFavourite">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="myModalFavLabel"><span id="LitFavTitle"></span></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>
+                            <span class="text-secondary fw-normal" id="LitFavDescription"></span>
+                        </p>
+                    </div>
+
+                    <div class="modal-footer bg-light">
+                        <button data-bs-dismiss="modal" class="btn btn-ghost-white" type="button" causesvalidation="False">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ContentPlaceHolder1_rfvAddress"), document.getElementById("ContentPlaceHolder1_rfvPrivateNameTag"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ContentPlaceHolder1_rfvAddress = document.all ? document.all["ContentPlaceHolder1_rfvAddress"] : document.getElementById("ContentPlaceHolder1_rfvAddress");
+ContentPlaceHolder1_rfvAddress.controltovalidate = "ContentPlaceHolder1_txtAddress";
+ContentPlaceHolder1_rfvAddress.errormessage = "<br> *Invalid address";
+ContentPlaceHolder1_rfvAddress.display = "Dynamic";
+ContentPlaceHolder1_rfvAddress.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ContentPlaceHolder1_rfvAddress.validationexpression = "^[a-zA-Z0-9]{42,44}$";
+var ContentPlaceHolder1_rfvPrivateNameTag = document.all ? document.all["ContentPlaceHolder1_rfvPrivateNameTag"] : document.getElementById("ContentPlaceHolder1_rfvPrivateNameTag");
+ContentPlaceHolder1_rfvPrivateNameTag.controltovalidate = "ContentPlaceHolder1_txtPrivateNameTag";
+ContentPlaceHolder1_rfvPrivateNameTag.errormessage = "Please enter private name tag.";
+ContentPlaceHolder1_rfvPrivateNameTag.display = "Dynamic";
+ContentPlaceHolder1_rfvPrivateNameTag.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_rfvPrivateNameTag.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+
+    <script>
+
+        var sid =  '0443d3442d0544619b18bd30f11fb708';
+        var active_id = "";
+
+        function getnote(addr) {
+            active_id = addr;
+            $("#mymodalform").validate().resetForm();
+            $(".u-has-error").removeClass("u-has-error");
+            document.getElementById("ContentPlaceHolder1_txtPrivateNameTag").value = document.getElementById("t_" + addr).innerText;
+            document.getElementById("ContentPlaceHolder1_txtPrivateNoteArea").value = document.getElementById("n_" + addr).innerHTML;
+            //document.getElementById("address").innerText = addr;
+            document.getElementById("ContentPlaceHolder1_txtAddress").value = addr;
+            document.getElementById("ContentPlaceHolder1_txtAddress").disabled = true;
+            document.getElementById("myresponsiveLabel").innerHTML = "&nbsp;Edit Private Name Tag";
+            document.getElementById("savenote").hidden = false;
+            document.getElementById("ContentPlaceHolder1_btnaddnote").disabled = true;
+            document.getElementById("ContentPlaceHolder1_btnaddnote").hidden = true;
+            document.getElementById("ContentPlaceHolder1_rfvAddress").style.display = "none";
+            new HSCountCharacters('.js-count-characters');
+        }
+
+        function addNewNote() {
+            $("#mymodalform").validate().resetForm();
+            $(".u-has-error").removeClass("u-has-error");
+            document.getElementById("ContentPlaceHolder1_txtPrivateNameTag").value = "";
+            document.getElementById("ContentPlaceHolder1_txtPrivateNoteArea").value = "";
+            document.getElementById("ContentPlaceHolder1_txtAddress").disabled = false;
+            document.getElementById("ContentPlaceHolder1_txtAddress").value = "";
+            document.getElementById("myresponsiveLabel").innerHTML = "&nbsp;Create Private Name Tag";
+            document.getElementById("savenote").hidden = true;
+            document.getElementById("ContentPlaceHolder1_btnaddnote").disabled = false;
+            document.getElementById("ContentPlaceHolder1_btnaddnote").hidden = false;
+            document.getElementById("ContentPlaceHolder1_rfvAddress").style.display = "none";
+            new HSCountCharacters('.js-count-characters');
+        }
+
+        function updateNote() {
+            var address = document.getElementById("ContentPlaceHolder1_txtAddress").value;   //window.location.pathname.substring(9);
+            var privname = document.getElementById("ContentPlaceHolder1_txtPrivateNameTag").value;
+            var privnote = document.getElementById("ContentPlaceHolder1_txtPrivateNoteArea").value;
+
+            $.ajax({
+                type: 'Get',
+                url: '/updateHandler',
+                data: {
+                    opr: 'updatenoteaddr',
+                    a: address,
+                    nametag: privname,
+                    txt: privnote,
+                    sid: sid
+                },
+                success: function (res) {
+                    if (res == 0) {
+                        document.getElementById("t_" + address).innerText = document.getElementById("ContentPlaceHolder1_txtPrivateNameTag").value;
+                        $("#t_" + address).addClass("u-label u-label--value u-label--secondary text-dark");
+                        document.getElementById("n_" + address).innerText = document.getElementById("ContentPlaceHolder1_txtPrivateNoteArea").value;
+                        //document.getElementById("address").innerText = addr;
+                        active_id = "";
+                        $('#responsive').modal('hide');
+                        $("#spanResult").prepend("<div class='alert alert-success alert-dismissible fade show' role='alert'><div class='d-flex align-items-baseline gap-2'><i class='fa fa-check-circle'></i><strong>Status</strong>: Address Tag updated successfully</div><button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>");
+                    } else if (res == 1) {
+                        $("#privatenotetip").html("<font color='gray'><i class='far fa-exclamation-circle'></i> Sorry but to update your private Note, You have to be <font color='#48B8EE'><a href='/login'><b>Logged In</b></a></font> first.</font>");
+                    } else if (res == 2) {
+                        $("#privatenotetip").html("<font color='gray'><i class='far fa-exclamation-triangle'></i> Unable to update private Note. General exception error occurred.</font>");
+                    } else if (res == 3) {
+                        $('#responsive').modal('hide');
+                        alert("The private tag was successfully removed");
+                        location.replace("/mynotes_address");
+                    } else if (res == 4) {
+                        $("#privatenotetip").html("<font color='gray'><i class='far fa-exclamation-triangle'></i> Unable to remove private Note. General exception error occurred.</font>");
+                    } else if (res == 5) {
+                        $("#privatenotetip").html("<font color='red'><i class='far fa-exclamation-triangle'></i> Sorry, we were unable to add a new private Note. You have exceeded the maximum allowed quota for your account</font>");
+                    }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    //console.log(textStatus);
+                }
+            });
+        }
+
+        function UpdatePrivateNameTagDisplay() {
+            var result = document.getElementById("ContentPlaceHolder1_txtPrivateNameTag").value;
+
+            if (result == '') {
+                document.getElementById("Public_Private_Tag").innerHTML = "Not Available, ";
+                document.getElementById("Public_Private_Tag_edit_button").innerHTML = "<a data-bs-toggle='modal' data-bs-target='#responsive' data-bs-toggle-second='tooltip' title='Assign a Private Name Tag or Note for this address (only viewable by the user who created the tag)' href='#'>Update?</a>";
+            } else {
+                document.getElementById("Public_Private_Tag").innerText = result;
+                document.getElementById("Public_Private_Tag_edit_button").innerHTML = "<a data-bs-toggle='modal' data-bs-target='#responsive' data-bs-toggle-second='tooltip'title='View/Update Private Name Tag or Note' href='#'> <i class='far fa-edit text-info ms-1'></i> </a>";
+            }
+            $("[data-bs-toggle-second='tooltip']").tooltip();
+        }
+
+        function Count(text) {
+            var maxlength = 500;
+            var object = document.getElementById(text.id)  //get your object
+
+            if (object.value.length > maxlength) {
+                object.focus();
+                object.value = text.value.substring(0, maxlength); //truncate the value
+                object.scrollTop = object.scrollHeight; //scroll to the end to prevent jumping
+                return false;
+            }
+            return true;
+        }
+
+        function getaddress(addr) {
+            document.getElementById("removeaddress").innerText = addr;
+        }
+
+        function removenote() {
+            var address = document.getElementById("removeaddress").innerText;
+
+            $.ajax({
+                type: 'Get',
+                url: '/updateHandler',
+                data: {
+                    opr: 'removenoteaddr',
+                    a: address,
+                    sid: sid
+                },
+                success: function (res) {
+                    if (res == 0) {
+                        $("#myModaldelete").modal('hide');
+                        let filterGroupId = $("#ContentPlaceHolder1_hdFilterGroupId").val();
+                        let urlRedirect = "/mynotes_address";
+                        if (!isNaN(filterGroupId) && Number(filterGroupId) > 0) {
+                            urlRedirect += "?g=" + filterGroupId;
+                        }
+
+                        if (urlRedirect.indexOf("?") !== -1) {
+                            urlRedirect = urlRedirect + "&msg=addtagremove"
+                        } else {
+                            urlRedirect = urlRedirect + "?msg=addtagremove"
+                        }
+                        location.replace(urlRedirect);
+                    } else if (res == 1) {
+                        $("#spanResult").prepend("<div class='alert alert-danger alert-dismissible fade show' role='alert'><div class='d-flex align-items-baseline gap-2'><i class='fa fa-times-circle'></i><strong>Status</strong>: Error! Unable to remove " + address + " tag</div><button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>");
+                        $("#myModaldelete").modal('hide');
+                    }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    //console.log(textStatus);
+                }
+            });
+        }
+
+        
+
+        function updateFavouriteStatus(nametagid) {
+
+            $.ajax({
+                type: 'Get',
+                url: '/updateHandler',
+                data: {
+                    opr: 'updateAddressNoteFavourite',
+                    nametagid: nametagid,
+                    sid: sid
+                },
+                success: function (res) {
+
+                    let filterGroupId = $("#ContentPlaceHolder1_hdFilterGroupId").val();
+                    let urlRedirect = "/mynotes_address";
+                    if (!isNaN(filterGroupId) && Number(filterGroupId) > 0) {
+                        urlRedirect += "?g=" + filterGroupId;
+                    }
+
+                    if (urlRedirect.indexOf("?") !== -1) {
+                        urlRedirect = urlRedirect + "&"
+                    } else {
+                        urlRedirect = urlRedirect + "?"
+                    }
+
+                    if (res == 0) {
+                        location.replace(urlRedirect + "msg=addfavremove");
+                    } else if (res == 1) {
+                        location.replace(urlRedirect + "msg=addfavadd");
+                    } else if (res == 2) {
+                        $("#myModalFavourite").modal('show');
+                    } else if (res == 3) {
+                        location.replace(urlRedirect + "msg=addfaverror");
+                    }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    //console.log(textStatus);
+                }
+            });
+        }
+
+        $('#myModalFavourite').on('show.bs.modal', function (event) {
+            $("#LitFavTitle").html("Limit Reached");
+            $("#LitFavDescription").html("Limit of 10 favourite address name tag reached.");
+        });
+
+    </script>
+
+    </main>
+
+    <div id="push" style="display: none;"></div>
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="emailSubscribeModalBox" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close close-md" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="text-center py-5-alt px-4">
+                        <div id="emailSubscribeModalBoxText"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+
+    
+    
+    <div class="modal fade" id="copyAddressConfirmModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-0">
+                    <div class="mb-5">
+                        <div class="text-center">
+                            <div class="mb-2">
+                                <i class="fas fa-exclamation-triangle text-warning fs-2"></i>
+                            </div>
+
+                            <h6 class="modal-title fs-5 mb-0">Before You Copy</h6>
+                        </div>
+
+                        <div class="mb-3 text-center">
+                            <p class="text-muted small" id="addressToCopy"></p>
+                        </div>
+
+                        <p id="copyAddressConfirmMessage"></p>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="popupDontShowAgain">
+                            <label class="form-check-label" for="popupDontShowAgain">Don't show this for 30 days</label>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" id="btnConfirmCopyAddress" data-clipboard-target="#addressToCopy" class="btn btn-lg btn-secondary" data-bs-dismiss="modal">
+                            Understand, Copy Address
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Modal: Add Transaction Private Note -->
+     <div class="modal fade" id="tnxPrivateNoteModal" tabindex="-1" role="dialog">
+         <div class="modal-dialog">
+             <div class="modal-content">
+             <div class="modal-header">
+                 <h1 class="modal-title" id="tnxPrivateNoteModalLabel">Transaction Private Note</h1>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+
+             <div class="modal-body">
+                 <form>
+                 <div class="mb-4">
+                     <label class="form-label" for="saveTxnNoteHash">Transaction Hash</label>
+                     <input type="text" class="form-control py-2" id="saveTxnNoteHash" disabled>
+                 </div>
+
+                 <div class="mb-4">
+                     <label class="form-label" for="editTxnNote">Private Note Description</label>
+
+                     <textarea class="form-control py-2" id="editTxnNote" rows="5" name="text" placeholder="Short description.." maxlength="100"></textarea>
+                     <div class="small text-muted mt-1 ms-1"><span id="txtPrivateNoteTip"></span></div>
+
+                     <div class="form-text mt-2">
+                     <p>Please <strong class="fw-medium">DO NOT</strong> store any passwords or private keys here. A private note (up to 100 characters) can be saved and is useful for transaction tracking.
+                     </div>
+                 </div>
+
+                 <div class="d-flex flex-wrap gap-4">
+                     <a target="_blank" href="/mynotes_tx" rel="noopener noreferrer">
+                     View All Transactions Private Notes <i class="far fa-arrow-up-right text-secondary ms-1"></i>
+                     </a>
+                 </div>
+
+                 </form>
+             </div>
+
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-ghost-white" data-bs-dismiss="modal">Cancel</button>
+                 <button type="button" class="btn btn-primary" onclick="quickSubmitTxPrivateNote();">Save changes</button>
+                 <span id="modalElement" name="modalElement" style="display: none;"></span>
+             </div>
+             </div>
+         </div>
+     </div>
+     <!-- End Modal: Add Transaction Private Note -->
+
+    <footer id="masterFooter" class="bg-light mt-auto d-print-none">
+        
+        <div class="container-xxl">
+            <div class="d-flex justify-content-between align-items-baseline py-6">
+                <!-- Social Links -->
+                <div class="d-flex gap-2">
+                    <a class="btn btn-sm btn-secondary content-center rounded-circle" style="width: 2rem; height: 2rem;" href="https://twitter.com/etherscan" rel="nofollow noopener" target="_blank" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="X (Twitter)">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a class="btn btn-sm btn-secondary content-center rounded-circle" style="width: 2rem; height: 2rem;" href="https://medium.com/etherscan-blog" rel="nofollow noopener" target="_blank" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Medium">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                    <a class="btn btn-sm btn-secondary content-center rounded-circle" style="width: 2rem; height: 2rem;" href="https://www.facebook.com/etherscan/" rel="nofollow noopener" target="_blank" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a class="btn btn-sm btn-secondary content-center rounded-circle" style="width: 2rem; height: 2rem;" href="https://www.reddit.com/r/etherscan/" rel="nofollow noopener" target="_blank" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Reddit">
+                        <i class="fab fa-reddit-alien"></i>
+                    </a>
+                </div>
+                <!-- End Social Links -->
+             
+                <a class="link-dark" href="#">
+                    <i class="far fa-arrow-up-to-line me-1"></i>Back to Top
+                </a>
+            </div>
+
+            <hr class="my-0">
+
+            <!-- Footer Content -->
+            <div class="row justify-content-md-between py-8 py-lg-10">
+                <div class="col-lg-4 pe-xl-16 mb-4 mb-lg-0">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="me-2" width="20" data-img-theme="light" src="/images/svg/brands/ethereum-original.svg" alt="Ethereum Logo">
+                        <img class="me-2" width="20" data-img-theme="darkmode" src="/images/svg/brands/ethereum-original-light.svg" alt="Ethereum Logo">
+                        <span class="fs-5">Powered by Ethereum</span>
+                    </div>
+
+                    <p class="fs-sm">Etherscan is a Block Explorer and Analytics Platform for Ethereum, a decentralized smart contracts platform.</p>
+                    <div class="d-none d-lg-block mt-n4 mb-n6">
+                        <script type="text/javascript" style="display:none">
+//<![CDATA[
+window.__mirage2 = {petok:"DuA8Rd2MDSFgpFmbhlomfogMKf1IuH3vkTd8eG97OZ4-1800-0.0.1.1"};
+//]]>
+</script>
+<script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
+<img class="opacity-50" width="280" data-img-theme="light" alt="Background Map Image" data-cfsrc="/images/map.png" style="display:none;visibility:hidden;"><noscript><img class="opacity-50" width="280" data-img-theme="light" src="/images/map.png" alt="Background Map Image"></noscript>
+                        <img class="opacity-50" width="280" data-img-theme="darkmode" alt="Background Map Image" data-cfsrc="/images/map-light.png" style="display:none;visibility:hidden;"><noscript><img class="opacity-50" width="280" data-img-theme="darkmode" src="/images/map-light.png" alt="Background Map Image"></noscript>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg mb-10 mb-md-0">
+                    <h4 class="h6 mb-3">Company</h4>
+                    <!-- List Group -->
+                    <ul class="list-unstyled list-sm-space fs-sm mb-0">
+                        <li><a class="link-dark" href="/aboutus">About Us</a></li>
+                        <li><a class="link-dark" href="/brandassets">Brand Assets</a></li>
+                        <li><a class="link-dark" href="/contactus">Contact Us</a></li>
+                        <li>
+                            <a class="link-dark" href="/careers">
+                                <span class="me-1">Careers</span> <span class="bg-primary text-white small fw-medium text-nowrap rounded-pill p-1 px-2">We're Hiring!</span>
+                            </a>
+                        </li>
+                        <li><a class="link-dark" href="/terms">Terms</a> & <a class="link-dark" href="/privacyPolicy">Privacy</a></li>
+                        <li><a class="link-dark" href="/bugbounty">Bug Bounty</a></li>
+                    </ul>
+                    <!-- End List Group -->
+                </div>
+
+                <div class="col-6 col-md-4 col-lg mb-10 mb-md-0">
+                    <h4 class="h6 mb-3">Community</h4>
+                    <!-- List Group -->
+                    <ul class="list-unstyled list-sm-space fs-sm mb-0">
+                        <li><a class="link-dark" href="https://docs.etherscan.io/etherscan-v2" target="_blank">API Documentation</a></li>
+                        <li><a class="link-dark" href="https://info.etherscan.com/">Knowledge Base</a></li>
+                        <li><a class="link-dark" href="https://etherscan.freshstatus.io/" rel="nofollow noopener" target="_blank">Network Status</a></li>
+                        <li><a class="link-dark" href="https://info.etherscan.com/newsletters/">Newsletters</a></li>
+                        
+                    </ul>
+                    <!-- End List Group -->
+                </div>
+
+                <div class="col-6 col-md-4 col-lg">
+                    <h4 class="h6 mb-3">Products &amp; Services</h4>
+                    <!-- List Group -->
+                    <ul class="list-unstyled list-sm-space fs-sm mb-0">
+                        <li><a class="link-dark" href="/contactusadvertise">Advertise</a></li>
+                        <li><a class="link-dark" href="/eaas">Explorer as a Service (EaaS)</a></li>
+                        <li><a class="link-dark" href="/apis">API Plans</a></li>
+                        <li><a class="link-dark" href="/priority-support">Priority Support</a></li>
+                        <li><a class="link-dark" href="https://blockscan.com" target="_blank">Blockscan <i class="far fa-arrow-up-right-from-square text-muted ms-1"></i></a></li>
+                        <li><a class="link-dark" href="https://chat.blockscan.com/start" target="_blank">Blockscan Chat <i class="far fa-arrow-up-right-from-square text-muted ms-1"></i></a></li>
+                    </ul>
+                    <!-- End List Group -->
+                </div>
+            </div>
+            <!-- End Footer Content -->
+
+            <!-- Copyright Content -->
+            <div class="border-top py-4">
+                <div class="row justify-content-between align-items-center fs-sm">
+                    <div class="col-md mb-2 mb-md-0">
+                        <p class="mb-0">Etherscan © 2025  (C1)</p>
+                    </div>
+
+                    <div class="col-md text-md-end">
+                        <p class="mb-0">
+                            Donations: <a class='me-1' href='/address/0x71c7656ec7ab88b098defb751b7401b5f6d8976f'><span id='spanDonateAddress' runat='server'>0x71c765...d8976f</span></a> <i class='fas fa-heart text-danger'></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Copyright Content -->
+        </div>
+
+        </footer>
+    <!-- ========== END FOOTER ========== -->
+
+    <!-- Cookie Alert -->
+    <div id="masterDivCookie">
+        <div class="fixed-bottom text-center" id="divcookie" style="display: none;">
+            <div class="alert alert-light fade show border shadow-sm d-inline-flex flex-wrap flex-sm-nowrap align-items-sm-center text-start gap-3 mx-3" role="alert">
+                <p class="text-dark mb-0">
+                    <i class="far fa-cookie-bite text-muted"></i> This website <a href="/terms#cookiestatement" target="_blank">uses cookies to improve your experience</a>. By continuing to use this website, you agree to its <a href="/terms" target="_blank">Terms</a> and <a href="/privacyPolicy" target="_blank">Privacy Policy</a>.
+                </p>
+                <button id ='btnCookie' type="button" class="btn btn-primary text-nowrap px-4" data-bs-dismiss="alert" aria-label="Close">Got it!</button>
+            </div>
+        </div>
+    </div>
+    <!-- End Cookie Alert -->
+
+    <script src="/assets/vendor/jquery-ui/jquery-ui.min.js?v=25.1.2.0"></script>
+    <script src="/assets/vendor/jquery-migrate/dist/jquery-migrate.min.js?v=25.1.2.0"></script>
+    <script src="/assets/vendor/bootstrap/bootstrap.bundle.min.js?v=25.1.2.0"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="/assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js?v=25.1.2.0"></script>
+    <script src="/assets/vendor/clipboard/dist/clipboard.min.js?v=25.1.2.0"></script>
+
+    <!-- JS Front -->
+    <script src="/assets/js/hs.core.js?v=25.1.2.0"></script>
+    <script src="/assets/js/components/hs.cubeportfolio.js?v=25.1.2.0"></script>
+    <script src="/assets/js/custom/combine-js-bottom2.js?v=25.1.2.0"></script>
+    <script src="/assets/vendor/autocomplete/dist/js/autocomplete.min.js?v=25.1.2.0"></script>
+    <script src="/assets/js/custom/ether-search.js?v=25.1.2.0"></script>
+    <!-- JS -->
+    <script src="/assets/js/app.min.js?v=25.1.2.0"></script>
+    <!-- JS Init. -->
+    <script>
+
+        (function () {
+            // INITIALIZATION OF CLIPBOARD
+            HSCore.components.HSClipboard.init('.js-clipboard');
+
+            let searchAttributes = {
+                'name': 'title',
+                'img': 'img',
+                'rate': 'rate',
+                'address': 'address',
+                'link': 'link',
+                'group': 'group',
+                'groupid': 'groupid',
+                'website': 'website',
+                'is_verified': 'is_checked',
+                'ps': 'ps',
+                'desc': 'desc',
+                'reputation' : 'reputation'
+            }
+
+            etherSearchInit({
+                id: 'search-panel',
+                attributes: searchAttributes
+            });
+
+
+        })();
+       
+    </script>
+    <!-- JS Plugins Init. -->
+    <script>
+        $(window).on('load', function () {
+            myfn_subscribeNewsletter.startFn("#btnSubscribeNewsletter", "#signupSrEmail")
+        });
+
+        $(document).on('ready', function () {
+
+            // Get offset timezone of enduser and set to cookie
+            const date = new Date();
+            const offsetMinutes = date.getTimezoneOffset();
+            const offsetHours = Math.abs(offsetMinutes / 60);
+            const sign = offsetMinutes > 0 ? '-' : '+';
+            offsetHoursFinal = sign + offsetHours;
+            writeCookie("etherscan_offset_datetime", offsetHoursFinal, 365);
+
+            // initialization of cubeportfolio
+            $.HSCore.components.HSCubeportfolio.init('.cbp');
+
+            const clipboard = new ClipboardJS('.js-clipboard');
+            clipboard.on('success', function (e) {
+                let toolTip = bootstrap.Tooltip.getInstance(e.trigger);
+                var oriTooltip = toolTip._config.originalTitle
+               
+                toolTip._config.title = 'Copied!';
+                toolTip.setContent();
+                toolTip.update();
+
+                setTimeout(function () {
+                    toolTip._config.title = oriTooltip;
+                }, 1000);
+            });
+        });
+
+    </script>
+    
+    <script type="text/javascript">
+        var sid = '0443d3442d0544619b18bd30f11fb708';
+        var strGlobal = getCookie("etherscan_switch_age_datetime");
+        var strGlobalFee = sessionStorage.getItem("ShowFee");
+        var strGlobalSlotEpoch = sessionStorage.getItem("ShowSlotEpoch");
+        var cookieconsent = getCookie("etherscan_cookieconsent");
+        var ignoreCopyConfirmation = getCopyAddressConfirmationSetting();
+        
+        if (cookieconsent !== "True" && document.getElementById("divcookie")) {
+            document.getElementById("divcookie").style.display = "block";
+        };
+          
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) === 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        $("#btnCookie").click(function () {
+            $("#divcookie").fadeOut("slow", function () {
+                var d = new Date();
+                d.setTime(d.getTime() + (1095 * 24 * 60 * 60 * 1000));
+                var expires = "expires=" + d.toUTCString();
+                document.cookie = "etherscan_cookieconsent=True" + ";" + expires + ";path=/";;
+            });
+        });
+
+        function handleSearchText(data) {
+            searchAddress = false;
+            if ($("search-panel").val() == "") {
+                $("#hdnSearchText").val("");
+                $("#hdnSearchLabel").val("");
+            }
+        }
+
+        function writeCookie(key, value, days) {
+            var date = new Date();
+            days = days || 365;
+            date.setTime(+ date + (days * 86400000));
+            window.document.cookie = key + "=" + value + "; expires=" + date.toGMTString() + "; path=/";
+            return value;
+        }
+
+        function setThemeMode(mode) {
+            writeCookie('displaymode', mode);
+        }
+
+        // Note: this function will be called from where need to init the "Copy Address Confirm Modal".
+        function openCopyAddressConfirmModal(address, message) {
+            $("#addressToCopy").text(address);
+            $("#copyAddressConfirmMessage").text(message);
+
+            const clipboard = new ClipboardJS("#btnConfirmCopyAddress");
+            document.getElementById('copyAddressConfirmModal').addEventListener('hidden.bs.modal', event => {
+                clipboard.destroy();
+            });
+
+            const copyAddressConfirmModal = new bootstrap.Modal('#copyAddressConfirmModal', {
+                backdrop: true
+            })
+            copyAddressConfirmModal.show();
+        }
+
+        function saveCopyAddressConfirmationSetting(ignoreCopyConfirmation) {
+            const copyAddressConfirmationSetting = {
+                ignoreCopyConfirmation: ignoreCopyConfirmation,
+                expiresOn: Date.now() + 1000 * 60 * 60 * 24 * 30
+            };
+            localStorage.setItem("copyAddressConfirmationSetting", JSON.stringify(copyAddressConfirmationSetting));
+        }
+
+        function getCopyAddressConfirmationSetting() {
+            try {
+                const settings = localStorage.getItem("copyAddressConfirmationSetting");
+                if (settings) {
+                    const copyAddressConfirmationSetting = JSON.parse(settings);
+
+                    return copyAddressConfirmationSetting.ignoreCopyConfirmation && copyAddressConfirmationSetting.expiresOn > Date.now();
+                }
+                else {
+                    return false;
+                }
+            } catch (e) {
+                return false;
+            }
+        }
+
+    </script>
+    
+
+    <script src="/assets/js/custom/web3.min.js?v=25.1.2.0"></script> 
+    <script type="text/javascript">
+        var web3ojb;
+        var isTestnet = 'false';
+        var chain = 'Mainnet'
+
+        async function addNetwork(type) {
+            if (isTestnet != 'true') return;
+            if (chain != 'Holesky') return;
+
+            if (type === 'web3') {
+                if (typeof ethereum !== 'undefined') {
+                    web3ojb = new Web3(ethereum);
+                } else if (typeof web3 !== 'undefined') {
+                    web3ojb = new Web3(web3.givenProvider);
+                } else {
+                    web3ojb = new Web3(ethereum);
+                }
+            }
+
+            if (typeof web3ojb !== 'undefined') {
+                var network = 0;
+                network = await web3ojb.eth.net.getId();
+                netID = network.toString();
+                var params;
+                if (isTestnet == 'true') {
+                    if (chain == "Holesky") {
+                        if (netID == "17000") {
+                            alert("Holesky Test Network has already been added to Metamask.");
+                            return;
+                        } else {
+                            params = [{
+                                chainId: '0x4268',
+                                chainName: 'Holesky Test Network',
+                                nativeCurrency: {
+                                    name: 'ETH',
+                                    symbol: 'ETH',
+                                    decimals: 18
+                                },
+                                rpcUrls: ['https://rpc.holesky.ethpandaops.io/'],
+                                blockExplorerUrls: ['https://holesky.etherscan.io/']
+                            }]
+
+                            if (window.ethereum.providers?.length) {
+                                let indexProvider = parent.ethereum.providers.findIndex((provider) => provider.isMetaMask);
+
+                                window.ethereum.providers[indexProvider].request({ method: 'wallet_addEthereumChain', params })
+                                    .then(() => console.log('Success'))
+                                    .catch((error) => console.log("Error", error.message));
+                            } else {
+                                if (window.ethereum.isMetaMask) {
+                                    window.ethereum.request({ method: 'wallet_addEthereumChain', params })
+                                        .then(() => console.log('Success'))
+                                        .catch((error) => console.log("Error", error.message));
+                                } else {
+                                    alert("Please Install Metamask")
+                                }
+                            }
+
+                        }
+                    }
+                } else {
+                    alert('Unable to locate a compatible web3 browser!');
+                }
+            }
+        }
+    </script>
+
+    
+    <script src="/assets/vendor/jquery-validation/dist/jquery.validate.min.js?v=25.1.2.0"></script>
+    <script src="/assets/js/components/hs.validation.js?v=25.1.2.0"></script>
+    <script src="/assets/vendor/hs-count-characters/dist/js/hs-count-characters.js?v=25.1.2.0"></script>
+    <script type="text/javascript" src="/assets/js/custom/commonjs.js?v=25.1.2.0"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("[rel='tooltip']").tooltip();
+
+            $.HSCore.components.HSValidation.init('.js-validate');
+
+            clearSearchInput();
+        });
+    </script>
+    <!-- JS Init. -->
+    <script>
+        (function () {
+            // INITIALIZATION OF COUNT CHARACTERS
+            // =======================================================
+            new HSCountCharacters('.js-count-characters');
+
+            // INPUT FOCUS
+            // =======================================================
+            document.getElementById("dropdownSearchFilter").addEventListener("click", () => {
+                if (!((('ontouchstart' in window)
+                    || (navigator.maxTouchPoints > 0)
+                    || (navigator.msMaxTouchPoints > 0))
+                    && window.innerWidth <= 991)) {
+                    document.getElementById("q").focus();
+                }
+            });
+
+            document.getElementById('responsive').addEventListener('shown.bs.modal', event => {
+                document.getElementById("ContentPlaceHolder1_txtAddress").focus();
+            });
+
+            $("#txtSearNameTag").on("keyup", function (evt) {
+                if ((evt.keyCode >= 48 && evt.keyCode <= 90) || evt.keyCode == 189 || evt.keyCode == 8 || evt.keyCode == 13) {
+                    let textSearch = $("#txtSearNameTag").val();
+                    mynotes.load_private_name_tag(textSearch, mynotes.lstNameTagSelected.join(","));
+                }
+            });
+
+
+            $(document).keyup(function (event) {
+                if (event.keyCode == 27) {
+                    if ($('#mdConfirmDeleteGroup').is(':visible') == true) {
+                        $('#mdConfirmDeleteGroup').modal('hide');
+                    }
+                }
+            });
+
+            //$("#txtGroupName").on("keyup", function (evt) {
+            //    if (evt.keyCode != 9) {
+            //        mynotes.validate_form(true);
+            //    }
+            //});
+
+            $("#txtGroupName").on("change", function () {
+                let newName = $("#txtGroupName").val();
+                if (newName) {
+                    let currentName = mynotes.isCreate == true ? " " : $("#ContentPlaceHolder1_hdGroupName").val();
+                    mynotes.isGroupNameExist(newName, currentName, function (res) {
+                        if (res) {
+                            if (res.d == true) {
+                                $("#txtGroupName").parent().find(".invalid-feedback").remove();
+                                $("#txtGroupName").parent().append('<span class="invalid-feedback" style="display: block;">This group name already exists. Please enter another name.</span>');
+                                $("#txtGroupName").focus();
+                            } else {
+                                $("#txtGroupName").parent().find(".invalid-feedback").remove();
+                            }
+                        }
+                    });
+                }
+            });
+
+            $("#btnSubmmitGroup").click(function () {
+                mynotes.submit_form();
+            });
+
+            $('#listAdvancedFilter').on('click', '.cb-private-tags', function () {
+                let isChecked = $(this).prop('checked');
+                let nameTagId = $(this).data("id");
+
+                // Find the index of the item
+                let index = mynotes.lstNameTagSelected.indexOf(nameTagId);
+                if (index >= 0) {
+                    if (!isChecked) mynotes.lstNameTagSelected.splice(index, 1);
+                } else {
+                    mynotes.lstNameTagSelected.push(nameTagId);
+                }
+
+
+                // Remove alert message if any
+                if (mynotes.lstNameTagSelected.length > 0) {
+                    $("#txtSearNameTag").parent().find(".invalid-feedback").remove();
+                }
+            });
+
+            $("#btnGroupDelete").click(function () {
+                mynotes.confirm_delete_group();
+            });
+
+            $("#btnContinueRemoveGroup").click(function () {
+                let groupId = $("#ContentPlaceHolder1_hdFilterGroupId").val();
+                mynotes.delete_group(groupId);
+            });
+
+            // check and enable edit button
+            let filterGroupId = $("#ContentPlaceHolder1_hdFilterGroupId").val();
+            if (filterGroupId && parseInt(filterGroupId) > 0) {
+                $("#conEditGroup").show();
+
+                // Scroll to that item
+                const $activeElement = $("#li_group_item_" + filterGroupId);
+                if ($activeElement) {
+                    $("#myTab").animate({ 'scrollLeft': ($activeElement.position().left - 50) }, 0);
+                }
+            }
+
+        })()
+
+        var mynotes = {
+            lstNameTagSelected: [],
+            isCreate: true,
+            isCalling: false,
+            open_model: function (action) {
+                mynotes.reset_form();
+                document.getElementById("txtGroupName").focus();
+                $("#txtSearNameTag").val("");
+                if (action == 'insert') {
+                    mynotes.isCreate = true;
+                    $("#titGroup").html("Add Group");
+                    $("#btnSubmmitGroup").html("Create Group");
+                    $("#btnSubmmitGroup").parent().addClass("w-100 text-end");
+                    $("#btnGroupDelete").hide();
+                }
+
+                if (action == 'update') {
+                    mynotes.isCreate = false;
+                    $("#titGroup").html("Edit Group");
+                    $("#btnSubmmitGroup").html("Save Changes");
+                    $("#btnSubmmitGroup").parent().removeClass("w-100 text-end");
+                    $("#btnGroupDelete").show();
+
+                    // Set value to form
+                    $("#txtGroupName").val($("#ContentPlaceHolder1_hdGroupName").val());
+
+                }
+
+                $('#addGroup').modal('show');
+
+                //Load list of group mapping
+                let textSearch = $("#txtSearNameTag").val();
+                let lstNoteIds = $("#ContentPlaceHolder1_hdGroupNoteIds").val();
+                if (lstNoteIds && action == 'update') {
+                    let noteIds = lstNoteIds.split(",");
+                    if (noteIds.length > 0) {
+                        mynotes.lstNameTagSelected = [];
+                        for (let i = 0; i < noteIds.length; i++) {
+                            mynotes.lstNameTagSelected.push(parseInt(noteIds[i]));
+                        }
+                    }
+                }
+
+                if (action == 'insert') {
+                    lstNoteIds = "";
+                }
+
+                mynotes.load_private_name_tag(textSearch, lstNoteIds);
+            },
+            load_private_name_tag: function (textSearch, lstNoteIds) {
+                if (!mynotes.isCalling) {
+                    mynotes.isCalling = true;
+                    $.ajax({
+                        url: '/mynotes_address.aspx/GetListPrivateNameTag',
+                        type: 'POST',
+                        dataType: 'json',
+                        contentType: "application/json",
+                        data: JSON.stringify({
+                            "textSearch": textSearch
+                        }),
+                        beforeSend: function () {
+                            $("#private_name_tag_list").html('<div class="icon-loading-tag" style="text-align:center"><i class="fas fa-spinner fa-spin" aria-hidden="true" style="font-size:24px;"></i></div>');
+                        },
+                        success: function (res) {
+                            let htmlText = ""
+                            if (res && res.d && res.d.length > 0) {
+
+                                for (let i = 0; i < res.d.length; i++) {
+
+                                    let strId = "'" + res.d[i].Id + "'";
+                                    let strChecked = "";
+                                    if (lstNoteIds) {
+                                        lstNoteIds = "'" + lstNoteIds.replace(/\,/g, "','") + "'";
+                                        strChecked = lstNoteIds.indexOf(strId) != -1 ? "checked" : "";
+                                    }
+
+                                    htmlText += '<div class="d-flex position-relative hover:bg-secondary rounded gap-1 py-1 px-2">';
+                                    htmlText += '  <input class="form-check-input me-1 cb-private-tags" type="checkbox" ' + strChecked + ' data-id="' + res.d[i].Id + '" name="chooseSavedFilter" id="cbNameTag_' + res.d[i].Id + '">';
+                                    htmlText += '  <label class="form-check-label stretched-link" for="cbNameTag_' + res.d[i].Id + '">';
+                                    htmlText += '	 <div class="d-flex gap-2">';
+                                    htmlText += '	  <div>';
+                                    htmlText += '		<img class="rounded-circle" width="24" src="' + res.d[i].Image + '" alt="Image address">';
+                                    htmlText += '	  </div>';
+
+                                    htmlText += '	  <div>';
+                                    htmlText += '		<div class="list-name text-dark">' + res.d[i].NameTag + '</div>';
+                                    htmlText += '		<div class="small text-muted">' + res.d[i].Address + '</div>';
+                                    htmlText += '	  </div>';
+                                    htmlText += '	 </div>';
+                                    htmlText += '  </label>';
+                                    htmlText += '</div>';
+                                    htmlText += '<hr class="opacity-75 my-0 mx-1">';
+                                }
+                            } else {
+                                htmlText = '<div class="list-not-found text-center py-12">';
+                                htmlText += '<span class="bg-warning bg-opacity-10 border border-warning border-opacity-25 text-yellow-600 fs-70x content-center rounded-pill mx-md-auto mb-2" style="width: 3.5rem; height: 3.5rem;">';
+                                htmlText += '  <i class="far fa-file-slash fs-4"></i>';
+                                htmlText += '</span>';
+                                htmlText += '<p class="text-muted mb-0">Did not find any matching private name tag!</p>';
+                                htmlText += '</div>';
+                            }
+                            $("#private_name_tag_list").html(htmlText);
+
+                            mynotes.isCalling = false;
+                        }
+                    });
+                }
+            },
+            validate_form: function (isDiableFocus) {
+                let isvalid = true;
+                let focusElm = "";
+                let groupName = $("#txtGroupName").val();
+                isDiableFocus = isDiableFocus == undefined ? false : isDiableFocus;
+                $("#addGroup .invalid-feedback").remove();
+                if (groupName == "") {
+                    $("#txtGroupName").parent().append('<span class="invalid-feedback" style="display: block;">Please enter group name.</span>');
+                    focusElm = "txtGroupName";
+                    isvalid = false;
+                } else {
+                    if (groupName.length > 50) {
+                        $("#txtGroupName").parent().append('<span class="invalid-feedback" style="display: block;">Group name must be less than 50 characters.</span>');
+                        focusElm = "txtGroupName";
+                        isvalid = false;
+                    }
+                }
+
+                if (mynotes.lstNameTagSelected.length <= 0) {
+                    if (focusElm === "") {
+                        focusElm = "txtSearNameTag";
+                    }
+                    $("#txtSearNameTag").parent().append('<span class="invalid-feedback" style="display: block;">Please select private name tags to add.</span>');
+                    isvalid = false;
+                }
+
+                if (focusElm !== "" && !isDiableFocus) $("#" + focusElm).focus();
+
+                return isvalid;
+            },
+            submit_form: function () {
+                if (mynotes.validate_form()) {
+                    let groupId = $("#ContentPlaceHolder1_hdFilterGroupId").val();
+                    groupId = isNaN(groupId) ? "0" : parseInt(groupId);
+                    $("#btnSubmmitGroup").attr("disable", "disabled");
+                    $.ajax({
+                        url: '/mynotes_address.aspx/CreateGroup',
+                        type: 'POST',
+                        dataType: 'json',
+                        contentType: "application/json",
+                        data: JSON.stringify({
+                            "isCreate": mynotes.isCreate,
+                            "intGroupId": groupId,
+                            "strGroupName": $("#txtGroupName").val(),
+                            "lstNoteId": mynotes.lstNameTagSelected
+                        }),
+                        beforeSend: function () {
+                            $("#btnSubmmitGroup").find(".fa-spinner").remove();
+                            $("#btnSubmmitGroup").append('<i class="fa fa-spinner fa-spin ms-1"></i>');
+                        },
+                        success: function (res) {
+                            if (res) {
+                                if (res.d == "1") {
+                                    window.location.href = window.location.href;
+                                }
+                                else if (res.d == "0") {
+                                    alert("Can not create group, please reload and try again.");
+                                    window.location.href = window.location.href;
+                                }
+                                else if (res.d == "2") {
+                                    $("#txtGroupName").parent().remove(".invalid-feedback");
+                                    $("#txtGroupName").parent().append('<span class="invalid-feedback" style="display: block;">This group name already exists. Please enter another name.</span>');
+                                    $("#txtGroupName").focus();
+                                }
+                                else if (res.d == "3") {
+                                    alert("Can not update, this group is not found.");
+                                    window.location.href = window.location.href;
+                                }
+                            } else {
+                                alert("Can not create group, please reload and try again.");
+                                window.location.href = window.location.href;
+                            }
+
+                            $("#btnSubmmitGroup").find(".fa-spinner").remove();
+                        }
+                    });
+                } else {
+                    // Check group name exist.
+                    let newName = $("#txtGroupName").val();
+                    if (newName) {
+                        let currentName = mynotes.isCreate == true ? " " : $("#ContentPlaceHolder1_hdGroupName").val();
+                        mynotes.isGroupNameExist(newName, currentName, function (res) {
+                            if (res) {
+                                if (res.d == true) {
+                                    $("#txtGroupName").parent().find(".invalid-feedback").remove();
+                                    $("#txtGroupName").parent().append('<span class="invalid-feedback" style="display: block;">This group name already exists. Please enter another name.</span>');
+                                    $("#txtGroupName").focus();
+                                } else {
+                                    $("#txtGroupName").parent().find(".invalid-feedback").remove();
+                                }
+                            }
+                        });
+                    }
+                }
+            },
+            reset_form: function () {
+                $("#addGroup .invalid-feedback").remove();
+                $("#txtGroupName").val("");
+                mynotes.lstNameTagSelected = [];
+                mynotes.isCreate = true;
+            },
+            isGroupNameExist: function (newName, currentName, callback) {
+                $.ajax({
+                    url: '/mynotes_address.aspx/CheckExistGroupName',
+                    type: 'POST',
+                    dataType: 'json',
+                    contentType: "application/json",
+                    data: JSON.stringify({
+                        "newGroupName": newName,
+                        "currentGroupName": currentName
+                    }),
+                    success: function (res) {
+                        if (callback !== undefined && callback) callback(res);
+                    }
+                });
+            },
+            confirm_delete_group: function () {
+                $('#mdConfirmDeleteGroup').modal('show');
+            },
+            delete_group: function (groupId) {
+
+                $('#mdConfirmDeleteGroup').modal('hide');
+                if (!isNaN(groupId)) {
+                    $("#btnGroupDelete").attr("disable", "disabled");
+                    $.ajax({
+                        url: '/mynotes_address.aspx/DeleteGroup',
+                        type: 'POST',
+                        dataType: 'json',
+                        contentType: "application/json",
+                        data: JSON.stringify({
+                            "intGroupId": groupId
+                        }),
+                        beforeSend: function () {
+                            $("#btnGroupDelete").append('<i class="fa fa-spinner fa-spin ms-1"></i>');
+                        },
+                        success: function (res) {
+                            window.location.href = "/mynotes_address";
+                        }
+                    });
+                } else {
+                    alert("Can not found group information, please reload and try again.");
+                }
+            }
+        };
+    </script>
+
+
+</body>
+</html>
